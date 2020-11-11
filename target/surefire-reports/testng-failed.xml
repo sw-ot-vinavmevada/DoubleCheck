@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Create User For All Solution Test Suite]">
+  <test thread-count="5" verbose="0" name="Create User For All Solution UI Automation(failed)">
+    <parameter name="localDriverPath" value="C:\Program Files\geckodriver.exe"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="appUrl" value="http://40.113.196.248:809/login"/>
+    <classes>
+      <class name="TestCases.KitAndSolution.AddVendingMachineKitTC">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyToAddVendingMachine"/>
+          <include name="terminateReport"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestCases.KitAndSolution.AddVendingMachineKitTC -->
+    </classes>
+  </test> <!-- Create User For All Solution UI Automation(failed) -->
+</suite> <!-- Failed suite [Create User For All Solution Test Suite] -->

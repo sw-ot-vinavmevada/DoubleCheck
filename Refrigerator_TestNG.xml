@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Refrigerator Solution Test Suite">
+    <test name="Refrigerator Solution UI Automation">
+        <parameter name="browserName" value="Firefox"/>
+        <parameter name="localDriverPath" value="C:\Program Files\geckodriver.exe"/>
+
+        <!--Smart Green House URL-->
+        <!--<parameter name="appUrl" value="http://40.113.196.248:801/login"/>-->
+
+        <!--Smart Elevator URL-->
+        <!--<parameter name="appUrl" value="http://40.113.196.248:805/login"/>-->
+
+        <!--Smart Lighting URL-->
+        <!--<parameter name="appUrl" value="http://40.113.196.248:811/login"/>-->
+
+        <!--Smart Water Quality URL-->
+       <!-- <parameter name="appUrl" value="http://40.113.196.248:809/login"/>-->
+
+        <classes>
+
+            <class name="TestCases.KitAndSolution.AddRefrigeratorKitTC"/>
+
+        </classes>
+    </test>
+</suite>

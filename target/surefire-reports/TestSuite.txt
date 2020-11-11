@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.528 s <<< FAILURE! - in TestSuite
+verifyToAddVendingMachine(TestCases.KitAndSolution.AddVendingMachineKitTC)  Time elapsed: 36.045 s  <<< FAILURE!
+java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
+	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
+

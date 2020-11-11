@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Create User For All Solution Test Suite">
+    <test name="Create User For All Solution UI Automation">
+        <parameter name="browserName" value="firefox"/>
+        <parameter name="localDriverPath" value="C:\Program Files\geckodriver.exe"/>
+        <!--<parameter name="localDriverPath" value="E:\geckodriver.exe"/>-->
+
+        <!--Smart Green House URL-->
+        <parameter name="appUrl" value="http://40.113.196.248:801/login"/>
+
+        <!--Smart Elevator URL-->
+        <parameter name="appUrl" value="http://40.113.196.248:805/login"/>
+
+        <!--Smart Lighting URL-->
+        <parameter name="appUrl" value="http://40.113.196.248:811/login"/>
+
+        <!--Smart Water Quality URL-->
+        <parameter name="appUrl" value="http://40.113.196.248:809/login"/>
+
+         <!--Smart Refrigerator URL-->
+        <parameter name="appUrl" value="http://40.113.196.248:809/login"/>
+
+
+        <classes>
+            <!--<class name="TestCases.KitAndSolution.AddWaterSensorTC"/>
+            <class name="TestCases.KitAndSolution.AddGreenHouseKitTC"/>
+            <class name="TestCases.KitAndSolution.AddGeneratorTC"/>
+            <class name="TestCases.KitAndSolution.AddRefrigeratorKitTC"/>
+            <class name="TestCases.KitAndSolution.AddVendingMachineKitTC"/>-->
+
+          <!--  <class name="TestCases.KitAndSolution.AddElevatorKitTC"/> -->
+           <!-- <class name="TestCases.KitAndSolution.AddAirQualityKitTC"/> -->
+          <!--  <class name="TestCases.KitAndSolution.AddLightsTC"/> -->
+            <!--#####Delete Scenario####-->
+
+          <!--  <class name="TestCases.DeleteLocation.DeleteGreenHouseLocationTC"/> -->
+            <!--####Edit Scenario####-->
+          <!--> <class name="TestCases.EditLocation.EditGenSetLocationTC"/>-->
+            <class name="TestCases.KitAndSolution.AddVendingMachineKitTC"/>
+
+        </classes>
+    </test>
+</suite>
