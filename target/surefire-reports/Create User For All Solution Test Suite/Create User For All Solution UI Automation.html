@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 10 19:46:00 IST 2020</td>
+<td>Started on:</td><td>Wed Nov 11 13:53:08 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>71 seconds (71052 ms)</td>
+<tr><td>Total time:</td><td>141 seconds (141547 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,42 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine()'><b>verifyToAddVendingMachine</b><br>Test class: TestCases.KitAndSolution.AddVendingMachineKitTC</td>
-<td><div><pre>java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
-	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:47)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;mat-radio-container&apos;])[1] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at BasePackage.CommonMethods.clickOnLinkOrButton(CommonMethods.java:30)
+	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:112)
 	at TestCases.Login.CompanyUserLogin.VendingMachineUserLoginTC.verifyLogin(VendingMachineUserLoginTC.java:37)
 	at TestCases.AddBuilding.AddVendingLocationTC.verifyCreateLocation_VendingMachine(AddVendingLocationTC.java:36)
 	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1488946768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1488946768'><pre>java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:47)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class=&apos;mat-radio-container&apos;])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PC4066&apos;, ip: &apos;192.168.42.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12628, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 97fcfb44-8cd9-4817-af1d-8162f9364292
+*** Element info: {Using=xpath, value=(//div[@class=&apos;mat-radio-container&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807872790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807872790'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;mat-radio-container&apos;])[1] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at BasePackage.CommonMethods.clickOnLinkOrButton(CommonMethods.java:30)
+	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:112)
 	at TestCases.Login.CompanyUserLogin.VendingMachineUserLoginTC.verifyLogin(VendingMachineUserLoginTC.java:37)
 	at TestCases.AddBuilding.AddVendingLocationTC.verifyCreateLocation_VendingMachine(AddVendingLocationTC.java:36)
 	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
@@ -119,8 +144,34 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class=&apos;mat-radio-container&apos;])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PC4066&apos;, ip: &apos;192.168.42.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12628, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 97fcfb44-8cd9-4817-af1d-8162f9364292
+*** Element info: {Using=xpath, value=(//div[@class=&apos;mat-radio-container&apos;])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
 </pre></div></td>
-<td>36</td>
+<td>126</td>
 <td>TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578</td></tr>
 </table><p>
 </body>

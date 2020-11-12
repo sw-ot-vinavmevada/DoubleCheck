@@ -133,4 +133,9 @@ public class BaseTest {
     public void terminateReport() {
         driver.quit();
     }
+
+    public WebDriver getDriver() {
+        return driver;
+
+    }
 }

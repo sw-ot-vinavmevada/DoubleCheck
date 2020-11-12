@@ -9,15 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Create User For All Solution Test Suite</th></tr>
-<tr><td><a href="#t0">Create User For All Solution UI Automation</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">71,052</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Create User For All Solution UI Automation</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">141,547</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Create User For All Solution Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Create User For All Solution UI Automation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.KitAndSolution.AddVendingMachineKitTC</td><td><a href="#m0">verifyToAddVendingMachine</a></td><td rowspan="1">1605017786725</td><td rowspan="1">36026</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Create User For All Solution Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Create User For All Solution UI Automation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.KitAndSolution.AddVendingMachineKitTC</td><td><a href="#m0">verifyToAddVendingMachine</a></td><td rowspan="1">1605082997870</td><td rowspan="1">126915</td></tr></tbody>
 </table>
-<h2>Create User For All Solution UI Automation</h2><h3 id="m0">TestCases.KitAndSolution.AddVendingMachineKitTC#verifyToAddVendingMachine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
-	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:47)
+<h2>Create User For All Solution UI Automation</h2><h3 id="m0">TestCases.KitAndSolution.AddVendingMachineKitTC#verifyToAddVendingMachine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class=&apos;mat-radio-container&apos;])[1] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at BasePackage.CommonMethods.clickOnLinkOrButton(CommonMethods.java:30)
+	at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:112)
 	at TestCases.Login.CompanyUserLogin.VendingMachineUserLoginTC.verifyLogin(VendingMachineUserLoginTC.java:37)
 	at TestCases.AddBuilding.AddVendingLocationTC.verifyCreateLocation_VendingMachine(AddVendingLocationTC.java:36)
 	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class=&apos;mat-radio-container&apos;])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PC4066&apos;, ip: &apos;192.168.42.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12628, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 97fcfb44-8cd9-4817-af1d-8162f9364292
+*** Element info: {Using=xpath, value=(//div[@class=&apos;mat-radio-container&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

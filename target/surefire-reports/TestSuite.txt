@@ -1,8 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.528 s <<< FAILURE! - in TestSuite
-verifyToAddVendingMachine(TestCases.KitAndSolution.AddVendingMachineKitTC)  Time elapsed: 36.045 s  <<< FAILURE!
-java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 142.859 s <<< FAILURE! - in TestSuite
+verifyToAddVendingMachine(TestCases.KitAndSolution.AddVendingMachineKitTC)  Time elapsed: 126.945 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='mat-radio-container'])[1] (tried for 60 second(s) with 500 milliseconds interval)
+	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: (//div[@class='mat-radio-container'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PC4066', ip: '192.168.42.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12628, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 97fcfb44-8cd9-4817-af1d-8162f9364292
+*** Element info: {Using=xpath, value=(//div[@class='mat-radio-container'])[1]}
 	at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
 

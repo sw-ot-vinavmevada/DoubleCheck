@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Create User For All Solution Test Suite" duration-ms="71052" started-at="2020-11-10T14:16:00Z" finished-at="2020-11-10T14:17:11Z">
+  <suite name="Create User For All Solution Test Suite" duration-ms="141547" started-at="2020-11-11T08:23:08Z" finished-at="2020-11-11T08:25:30Z">
     <groups>
     </groups>
-    <test name="Create User For All Solution UI Automation" duration-ms="71052" started-at="2020-11-10T14:16:00Z" finished-at="2020-11-10T14:17:11Z">
+    <test name="Create User For All Solution UI Automation" duration-ms="141547" started-at="2020-11-11T08:23:08Z" finished-at="2020-11-11T08:25:30Z">
       <class name="TestCases.KitAndSolution.AddVendingMachineKitTC">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="beforeClass" is-config="true" duration-ms="25142" started-at="2020-11-10T14:16:00Z" finished-at="2020-11-10T14:16:25Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="beforeClass" is-config="true" duration-ms="8604" started-at="2020-11-11T08:23:08Z" finished-at="2020-11-11T08:23:17Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="beforeMethod" is-config="true" duration-ms="950" started-at="2020-11-10T14:16:25Z" finished-at="2020-11-10T14:16:26Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="beforeMethod" is-config="true" duration-ms="439" started-at="2020-11-11T08:23:17Z" finished-at="2020-11-11T08:23:17Z">
           <params>
             <param index="0">
               <value>
@@ -39,17 +39,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyToAddVendingMachine()[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="verifyToAddVendingMachine" duration-ms="36026" started-at="2020-11-10T14:16:26Z" finished-at="2020-11-10T14:17:02Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="verifyToAddVendingMachine()[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="verifyToAddVendingMachine" duration-ms="126915" started-at="2020-11-11T08:23:17Z" finished-at="2020-11-11T08:25:24Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Unable to Open End User URL expected [true] but found [false]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='mat-radio-container'])[1] (tried for 60 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unable to Open End User URL expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:47)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@class='mat-radio-container'])[1] (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at BasePackage.CommonMethods.clickOnLinkOrButton(CommonMethods.java:30)
+at TestCases.CreateCompanyUser.CreateVendingMachineUserTC.verifyCreateCompanyUser_VendingMachine(CreateVendingMachineUserTC.java:112)
 at TestCases.Login.CompanyUserLogin.VendingMachineUserLoginTC.verifyLogin(VendingMachineUserLoginTC.java:37)
 at TestCases.AddBuilding.AddVendingLocationTC.verifyCreateLocation_VendingMachine(AddVendingLocationTC.java:36)
 at TestCases.KitAndSolution.AddVendingMachineKitTC.verifyToAddVendingMachine(AddVendingMachineKitTC.java:36)
@@ -82,13 +82,39 @@ at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class='mat-radio-container'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PC4066', ip: '192.168.42.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12628, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 97fcfb44-8cd9-4817-af1d-8162f9364292
+*** Element info: {Using=xpath, value=(//div[@class='mat-radio-container'])[1]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToAddVendingMachine -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="afterMethod" is-config="true" duration-ms="3617" started-at="2020-11-10T14:17:02Z" finished-at="2020-11-10T14:17:06Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="afterMethod" is-config="true" duration-ms="3421" started-at="2020-11-11T08:25:24Z" finished-at="2020-11-11T08:25:28Z">
           <params>
             <param index="0">
               <value>
@@ -104,7 +130,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="terminateReport()[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="terminateReport" is-config="true" duration-ms="5260" started-at="2020-11-10T14:17:06Z" finished-at="2020-11-10T14:17:11Z">
+        <test-method status="PASS" signature="terminateReport()[pri:0, instance:TestCases.KitAndSolution.AddVendingMachineKitTC@337d0578]" name="terminateReport" is-config="true" duration-ms="2107" started-at="2020-11-11T08:25:28Z" finished-at="2020-11-11T08:25:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateReport -->
